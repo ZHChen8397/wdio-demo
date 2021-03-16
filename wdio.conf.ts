@@ -17,7 +17,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './features/**/*.feature'
+        './features/elementselect.feature'
     ],
     // Patterns to exclude.
     exclude: [
@@ -170,6 +170,7 @@ exports.config = {
     },
     beforeScenario() {
         const globalAny: any = global
+        const chai = require('chai')
         globalAny.baseUrl = 'https://the-internet.herokuapp.com/'
     },
     
