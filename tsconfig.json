@@ -2,12 +2,16 @@
     "compilerOptions": {
         "moduleResolution": "node",
         "module": "commonjs",
+        "lib": [
+            "es2017",
+            "dom"
+        ],
         "types": [
             "node",
             "@wdio/globals/types",
             "expect-webdriverio",
             "@wdio/cucumber-framework"
         ],
-        "target": "es2022"
+        "target": "es2019"
     }
 }
